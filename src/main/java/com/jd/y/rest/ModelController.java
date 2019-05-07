@@ -1,7 +1,6 @@
-package com.jd.y.audit.rest;
+package com.jd.y.rest;
 
-import com.jd.y.audit.bean.vo.AuditLog;
-import com.jd.y.audit.common.ApiResponse;
+import com.jd.y.common.ApiResponse;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

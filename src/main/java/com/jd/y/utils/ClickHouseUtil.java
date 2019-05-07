@@ -1,5 +1,5 @@
 /*
-package com.jd.y.audit.utils;
+package com.jd.y.utils;
 
 import com.jd.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;

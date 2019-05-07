@@ -1,6 +1,6 @@
-package com.jd.y.audit.exception;
+package com.jd.y.exception;
 
-import com.jd.y.audit.common.ApiResponse;
+import com.jd.y.common.ApiResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpStatus;
@@ -26,6 +26,6 @@ public class ExpHandler {
     @ResponseBody
     public ApiResponse handle(Exception e) {
         logger.error("系统异常:" + e.getMessage());
-        return ApiResponse.error(HttpStatus.BAD_REQUEST.value(), e.getMessage());
+        return ApiResponse.error(HttpStatus.BAD_REQUEST.value(), "系统异常1");
     }
 }

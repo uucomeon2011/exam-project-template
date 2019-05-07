@@ -2,7 +2,7 @@ package com.jd.y.audit.test.util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.jd.y.audit.utils.SqlUtil;
+import com.jd.y.utils.SqlUtil;
 import org.junit.Test;
 
 import java.util.LinkedHashMap;

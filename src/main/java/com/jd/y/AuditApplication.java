@@ -19,7 +19,7 @@ import javax.servlet.ServletException;
  * @Description: 审计系统启动主类
  * @date 2019-03-29 09:26
  */
-@MapperScan(basePackages = "com.jd.y.audit.mapper")
+@MapperScan(basePackages = "com.jd.y.mapper")
 @SpringBootApplication
 public class AuditApplication extends SpringBootServletInitializer {
     /**
@@ -32,11 +32,6 @@ public class AuditApplication extends SpringBootServletInitializer {
         return application.sources(AuditApplication.class);
     }
 
-    @Override
-    public void onStartup(ServletContext servletContext) throws ServletException {
-        super.onStartup(servletContext);
-    }
-
     /**
      * 主类 jar 启动方式
      *
@@ -45,6 +40,6 @@ public class AuditApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(AuditApplication.class, args);
         String envActive = context.getEnvironment().getProperty("spring.profiles.active");
-        logger.info("====[jar]audit sys start success=====active:" + envActive);
+        logger.info("====[jar]系统启动成功=====active:" + envActive);
     }
 }

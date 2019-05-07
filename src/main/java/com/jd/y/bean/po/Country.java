@@ -1,4 +1,4 @@
-package com.jd.y.audit.bean.po;
+package com.jd.y.bean.po;
 import javax.persistence.Id;
 
 public class Country {

@@ -1,6 +1,6 @@
 package com.jd.y.audit.test.service;
 
-import com.jd.y.audit.service.IAuditLogService;
+import com.jd.y.service.IAuditLogService;
 import com.jd.y.audit.test.common.BaseTest;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

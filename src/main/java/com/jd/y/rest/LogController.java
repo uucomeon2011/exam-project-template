@@ -1,8 +1,8 @@
-package com.jd.y.audit.rest;
+package com.jd.y.rest;
 
 import com.alibaba.fastjson.JSON;
-import com.jd.y.audit.bean.vo.AuditLog;
-import com.jd.y.audit.common.ApiResponse;
+import com.jd.y.bean.vo.AuditLog;
+import com.jd.y.common.ApiResponse;
 import io.swagger.annotations.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -32,6 +32,9 @@ public class LogController {
     })
     public ApiResponse logCollect(@RequestBody @ApiParam(name = "model", value = "日志信息") AuditLog auditLog) {
         logger.info(JSON.toJSONString(auditLog));
+        if (auditLog != null) {
+            throw new RuntimeException();
+        }
         return ApiResponse.success();
     }
 }

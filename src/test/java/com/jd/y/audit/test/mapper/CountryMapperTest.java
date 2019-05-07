@@ -1,7 +1,7 @@
 package com.jd.y.audit.test.mapper;
 
-import com.jd.y.audit.mapper.CountryMapper;
-import com.jd.y.audit.bean.po.Country;
+import com.jd.y.mapper.CountryMapper;
+import com.jd.y.bean.po.Country;
 import com.jd.y.audit.test.common.BaseTest;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

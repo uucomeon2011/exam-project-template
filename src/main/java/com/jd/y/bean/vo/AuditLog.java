@@ -1,4 +1,4 @@
-package com.jd.y.audit.bean.vo;
+package com.jd.y.bean.vo;
 
 
 import io.swagger.annotations.ApiModel;

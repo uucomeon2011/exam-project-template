@@ -1,4 +1,4 @@
-package com.jd.y.audit.common;
+package com.jd.y.common;
 
 import org.springframework.http.HttpStatus;
 
